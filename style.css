@@ -1,0 +1,135 @@
+/*------------------------------------------------*/
+/* BASIC SETUP */
+/*------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+html,
+button,
+input {
+    background-color: #ffffff;
+    color: #383838;
+    font-family: "Comfortaa", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.563;
+    text-rendering: optimizeLegibility;
+}
+
+form {
+    background-color: #ffffff;
+    margin: 50px auto;
+    width: 800px;
+    min-height: 200px;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.contact-title svg {
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    background-color: #D7BDE2;
+    border-radius: 50%;
+}
+
+.contact-fields {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.contact-fields p {
+    flex-basis: 300px;
+    margin: 20px auto 0;
+}
+
+.contact-fields mark {
+    background-color: #ffffff;
+    color: red;
+}
+
+.field-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-item input {
+    width: 190px;
+    min-height: 30px;
+    border-radius: 3px;
+    border: 1px solid #919191;
+    padding: 1px 5px;
+}
+
+.create-contact {
+    width: 120px;
+    height: 40px;
+    background-color: #7D3C98;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 14px 27px 3px rgba(220, 95, 176, 0.3);
+    transition: background-color 0.2s;
+}
+
+.create-contact:hover,
+.create-contact:active {
+    background-color: #6C3483;
+}
+
+.contact-cards {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    flex-basis: 275px;
+
+    background-color: #ffffff;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-card-item {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 400;
+}
+
+.name-card-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name-card-item div {
+    align-self: center;
+}
