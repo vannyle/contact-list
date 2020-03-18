@@ -79,6 +79,26 @@ h1 {
     padding: 1px 5px;
 }
 
+.birthday-field {
+    position: relative;
+}
+
+.calendar-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.calendar-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
 .create-contact {
     width: 120px;
     height: 40px;
@@ -89,6 +109,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 14px 27px 3px rgba(220, 95, 176, 0.3);
     transition: background-color 0.2s;
+    outline: none;
 }
 
 .create-contact:hover,
@@ -100,7 +121,8 @@ h1 {
     width: 1200px;
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
 figure {
@@ -109,27 +131,56 @@ figure {
     background-color: #ffffff;
     min-height: 200px;
     padding: 20px;
+    margin: 10px 20px 30px 0;
     border-radius: 7px;
     box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .name-card-item {
     display: flex;
     margin-bottom: 15px;
-    font-size: 400;
+    font-weight: 600;
 }
 
-.name-card-item img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
+.card p a {
+    text-decoration: none;
+    color: #9B59B6;
+
 }
 
 .name-card-item div {
     align-self: center;
+}
+
+.name-card-item svg {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #e3e3e3;
+}
+
+.close-btn {
+    width: 28px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline-color: transparent;
+}
+
+.close-btn svg {
+    width: 20px;
+    height: 20px;
+
 }

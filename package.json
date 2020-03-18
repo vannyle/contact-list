@@ -1,0 +1,27 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "This is the learning task how to create the contact list by HTML, CSS and Javascript.",
+  "main": "script.js",
+  "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.9",
+    "imask": "^6.0.3",
+    "jquery": "^3.4.1",
+    "jquery.inputmask": "^3.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vannyle/contact-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vannyle/contact-list/issues"
+  },
+  "homepage": "https://github.com/vannyle/contact-list#readme"
+}
