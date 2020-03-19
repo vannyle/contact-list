@@ -37,7 +37,7 @@
         <p class="field-item birthday-field">
             <label for="date-of-birth">Birthday</label>
             <input type="text" name="birthday" id="date-of-birth" placeholder="dd.mm.yyyy" autocomplete="off">
-            <button type="button" aria-label="Calendar button" class="calendar-btn">
+            <button type="button" aria-label="Calendar button" class="calendar-btn button">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-alt"
                      class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 448 512">
@@ -54,102 +54,51 @@
     <button type="submit" class="create-contact">Create</button>
 </form>
 <div class="contact-cards">
-    <!--   <figure class="card">
-           <div class="name-card-item">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
-                    class="svg-inline&#45;&#45;fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512">
-                   <path fill="#9B59B6"
-                         d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
-               </svg>
-               <div>
-                   <p class="first-name">John</p>
-                   <p class="last name">Doe</p>
-               </div>
-           </div>
-           <p>Birthday: 01.12.1969</p>
-           <p>Email: example@gmail.com</p>
-           <button type="button" class="close-btn">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
-                    class="svg-inline&#45;&#45;fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 352 512">
-                   <path fill="#919191"
-                         d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-               </svg>
-           </button>
-       </figure>
-       <figure class="card">
-           <div class="name-card-item">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
-                    class="svg-inline&#45;&#45;fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512">
-                   <path fill="#9B59B6"
-                         d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
-               </svg>
-               <div>
-                   <p class="first-name">John</p>
-                   <p class="last name">Doe</p>
-               </div>
-           </div>
-           <p>Birthday: 01.12.1969</p>
-           <p>Email: example@gmail.com</p>
-           <button type="button" class="close-btn">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
-                    class="svg-inline&#45;&#45;fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 352 512">
-                   <path fill="#919191"
-                         d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-               </svg>
-           </button>
-       </figure>
-       <figure class="card">
-           <div class="name-card-item">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
-                    class="svg-inline&#45;&#45;fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512">
-                   <path fill="#9B59B6"
-                         d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
-               </svg>
-               <div>
-                   <p class="first-name">John</p>
-                   <p class="last name">Doe</p>
-               </div>
-           </div>
-           <p>Birthday: 01.12.1969</p>
-           <p>Email: example@gmail.com</p>
-           <button type="button" class="close-btn">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
-                    class="svg-inline&#45;&#45;fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 352 512">
-                   <path fill="#919191"
-                         d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-               </svg>
-           </button>
-       </figure>
-       <figure class="card">
-           <div class="name-card-item">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
-                    class="svg-inline&#45;&#45;fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512">
-                   <path fill="#9B59B6"
-                         d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
-               </svg>
-               <div>
-                   <p class="first-name">John</p>
-                   <p class="last name">Doe</p>
-               </div>
-           </div>
-           <p>Birthday: 01.12.1969</p>
-           <p>Email: example@gmail.com</p>
-           <button type="button" class="close-btn">
-               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
-                    class="svg-inline&#45;&#45;fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 352 512">
-                   <path fill="#919191"
-                         d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-               </svg>
-           </button>
-       </figure>-->
+    <div class="contact-nav">
+        <input type="search" name="search" class="search-item" id="search-tool" placeholder="Search">
+        <button type="button" class="grid-btn button">
+            <svg class="svg-inline--fa fa-th fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+                <path fill="currentColor"
+                      d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"></path>
+            </svg>
+        </button>
+        <button type="button" class="list-btn button">
+            <svg class="svg-inline--fa fa-list-ul fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+                <path fill="currentColor"
+                      d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path>
+            </svg>
+        </button>
+
+    </div>
+    <!-- Add contact cards from js-->
+    <div class="contact-items grid">
+        <!--        <figure class="card">-->
+        <!--            <div class="name-card-item">-->
+        <!--                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"-->
+        <!--                     class="svg-inline&#45;&#45;fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"-->
+        <!--                     viewBox="0 0 448 512">-->
+        <!--                    <path fill="#9B59B6"-->
+        <!--                          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>-->
+        <!--                </svg>-->
+        <!--                <div>-->
+        <!--                    <p class="first-name">${firstName}</p>-->
+        <!--                    <p class="last name">${lastName}</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <p>Birthday: ${birthDay}</p>-->
+        <!--            <p>Email: <a href="mailto:${emailAddress}">${emailAddress}</a></p>-->
+        <!--            <button type="button" class="close-btn">-->
+        <!--                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"-->
+        <!--                     class="svg-inline&#45;&#45;fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"-->
+        <!--                     viewBox="0 0 352 512">-->
+        <!--                    <path fill="#919191"-->
+        <!--                          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>-->
+        <!--                </svg>-->
+        <!--            </button>-->
+        <!--        </figure>-->
+    </div>
 </div>
 </body>
 </html>

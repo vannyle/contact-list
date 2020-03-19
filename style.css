@@ -27,6 +27,10 @@ input {
     text-rendering: optimizeLegibility;
 }
 
+/*------------------------------------------------*/
+/* FORM */
+/*------------------------------------------------*/
+
 form {
     background-color: #ffffff;
     margin: 50px auto;
@@ -83,10 +87,7 @@ h1 {
     position: relative;
 }
 
-.calendar-btn {
-    position: absolute;
-    top: 3px;
-    right: 3px;
+.button {
     width: 26px;
     height: 26px;
     border: none;
@@ -94,9 +95,16 @@ h1 {
     cursor: pointer;
 }
 
-.calendar-btn svg {
+.button svg {
     width: 22px;
     height: 22px;
+}
+
+.calendar-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
 }
 
 .create-contact {
@@ -117,28 +125,116 @@ h1 {
     background-color: #6C3483;
 }
 
+/*------------------------------------------------*/
+/* CONTACT CARDS */
+/*------------------------------------------------*/
+
 .contact-cards {
     width: 1200px;
     margin: 50px auto;
+
+    box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
+
+}
+
+.contact-nav {
+    min-height: 30px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.grid-btn,
+.list-btn {
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    margin: 5px 10px 5px 5px;
+
+    color: #9B59B6;
+}
+
+.grid-btn.active,
+.list-btn.active {
+    color: #f7f7f7;
+    background-color: #9B59B6;
+}
+
+.grid-btn svg,
+.list-btn svg {
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    padding-right: 1px;
+}
+
+.contact-items.grid {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
 }
 
 figure {
-    flex-basis: 275px;
-
     background-color: #ffffff;
-    min-height: 200px;
+
     padding: 20px;
-    margin: 10px 20px 30px 0;
+    margin: 0 12px 30px;
     border-radius: 7px;
     box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
+    position: relative;
+}
 
+.list figure {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 300px;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.list .name-card-item {
+    width: 35%;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.list .name-card-item svg {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+}
+
+.list .full-name {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-name {
+    margin-right: 7px;
+}
+
+.list .birthday-item {
+    width: 295px;
+    margin-right: 50px;
+}
+
+.grid figure {
+    flex-basis: 275px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
+
+}
+
+
+.grid figure:nth-child(-n+5) {
+    margin-top: 30px;
 }
 
 .name-card-item {
@@ -172,15 +268,20 @@ figure {
     border: none;
     background: none;
     cursor: pointer;
-
+    outline-color: transparent;
     position: absolute;
     right: 10px;
-    top: 10px;
-    outline-color: transparent;
 }
 
 .close-btn svg {
     width: 20px;
     height: 20px;
+}
 
+.grid .close-btn {
+    top: 10px;
+}
+
+.list .close-btn {
+    top: 15px;
 }
