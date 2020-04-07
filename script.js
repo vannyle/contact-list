@@ -1,6 +1,6 @@
-import * as $ from "/dist/jquery";
-import './dist/@chenfengyuan/datepicker';
-import './dist/@chenfengyuan/datepicker/dist/datepicker.min.css';
+import * as $ from "jquery";
+import '@chenfengyuan/datepicker';
+import '@chenfengyuan/datepicker/dist/datepicker.min.css';
 import IMask from 'imask';
 
 let contacts = [];
