@@ -1,4 +1,4 @@
-import * as $ from "jquery/dist/jquery";
+import * as $ from "/dist/jquery";
 import '@chenfengyuan/datepicker';
 import '@chenfengyuan/datepicker/dist/datepicker.min.css';
 import IMask from 'imask';
