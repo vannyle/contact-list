@@ -91,6 +91,13 @@ $(document).ready(function () {
         localStorage.setItem('contacts', JSON.stringify(contacts));
     });
 
+    $("#search-tool").on("keyup", function() {
+        const value = $(this).val().toLowerCase();
+        contacts.filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
     $(".contact-nav").on('click', '.button', function (e) {
         if ($(this).hasClass('grid-btn')) {
             $('.grid-btn').addClass('active');

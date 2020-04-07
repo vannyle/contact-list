@@ -83,6 +83,11 @@ h1 {
     padding: 1px 5px;
 }
 
+.field-item input:focus {
+    outline: 1px solid #ac60c9;
+    border-color: transparent;
+}
+
 .birthday-field {
     position: relative;
 }
@@ -146,7 +151,32 @@ h1 {
 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
 
+.search-nav {
+    position: relative;
+}
+
+.search-item {
+    border: none;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    outline: none;
+    padding: 0 5px 0 30px;
+    margin-right: 20px;
+}
+
+.search-item::placeholder {
+    font-size: 14px;
+}
+
+.fa-search {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
 }
 
 .grid-btn,
@@ -186,6 +216,10 @@ figure {
     border-radius: 7px;
     box-shadow: 0 10px 36px 4px rgba(196, 196, 196, 0.23);
     position: relative;
+}
+
+.contact-items.list {
+    padding-bottom: 5px;
 }
 
 .list figure {
