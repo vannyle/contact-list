@@ -1,4 +1,4 @@
-import $ from "jquery";
+import * as $ from "jquery";
 import '@chenfengyuan/datepicker';
 import '@chenfengyuan/datepicker/dist/datepicker.min.css';
 import IMask from 'imask';
@@ -110,7 +110,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".contact-items").on('click', '.close-btn', function (event) {
+    $(".contact-items").on('click', '.close-btn', function () {
         if (!confirm("Are you sure to delete contact?")) {
             return false
         }
