@@ -6,7 +6,9 @@ import IMask from 'imask';
 let contacts = [];
 
 $(document).ready(function () {
-    contacts = JSON.parse(localStorage.getItem('contacts') || []);
+    if(localStorage["contacts"]) {
+        contacts = JSON.parse(localStorage.getItem('contacts') || []);
+    }
     if(contacts.length) {
         showContact(contacts);
     }
