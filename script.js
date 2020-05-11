@@ -7,7 +7,7 @@ let contacts = [];
 
 $(document).ready(function () {
     if(localStorage["contacts"]) {
-        contacts = JSON.parse(localStorage.getItem('contacts') || []);
+        contacts = JSON.parse(localStorage.getItem('contacts'));
     }
     if(contacts.length) {
         showContact(contacts);
