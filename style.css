@@ -267,7 +267,7 @@ figure {
 }
 
 
-.grid figure:nth-child(-n+5) {
+.grid figure:nth-child(-n+4) {
     margin-top: 30px;
 }
 
