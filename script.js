@@ -1,4 +1,4 @@
-import * as $ from "jquery";
+import $ from "jquery";
 import '@chenfengyuan/datepicker';
 import '@chenfengyuan/datepicker/dist/datepicker.min.css';
 import IMask from 'imask';
@@ -10,7 +10,6 @@ $(document).ready(function () {
     if(contacts.length) {
         showContact(contacts);
     }
-
     // Make grid view active
     $('.grid-btn').addClass('active');
 
